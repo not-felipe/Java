@@ -4,25 +4,40 @@ public class SmartTv {
   private int canal = 1;
   private int volume = 20;
 
+/**
+ * Este método é utilizado para alternar o status da Televisão (Ligar/Desligar)
+ */
 public void alternarStatus(){
   this.estaLigada = !estaLigada;
 }
 
+/**
+ * Este método é utilizado para aumentar o volume da televisão em 1 unidade (quando está ligada)
+ */
 public void aumentarVolume(){
   if(this.estaLigada)
   this.volume ++;
 }
 
+/**
+ * Este método é utilizado para diminuir o volume da 1 televisão em 1 unidade (quando está ligada)
+ */
 public void diminuirVolume(){
   if(this.estaLigada)
   this.volume --;
 }
 
+/**
+ * Este método é utilizado para trocar de canal (aumenta 1 unidade)
+ */
 public void trocarCanalCima(){
   if(this.estaLigada)
   this.canal ++;
 }
 
+/**
+ * Este método é utilizado para trocar de canal (diminui 1 unidade)
+ */
 public void trocarCanalBaixo(){
   if(this.estaLigada){
   this.canal --;
@@ -30,6 +45,9 @@ public void trocarCanalBaixo(){
   }
 }
 
+/**
+ * Imprime, caso a televisão esteja ligada, as informações
+ */
 public void imprimirInformacoes(){
   if (this.estaLigada) {
     System.out.println("Televisão está ligada");
