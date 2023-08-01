@@ -1,3 +1,12 @@
+/**
+ * <h1>SmartTv</h1>
+ * A SmartTv tem a funcionalidade de simular uma Tv em funcionamento
+ * 
+ * @author Felipe Alves
+ * @version 1.0
+ * @since 01/08/2023
+ */
+
 public class SmartTv {
   
   private boolean estaLigada = false;
